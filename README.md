@@ -54,11 +54,11 @@
 *Comprehensive analysis showing health score and detailed issue breakdown*
 
 ### Quick Health Check
-![Quick Health Check](screenshots/3.PNG)
+![Quick Health Check](screenshots/4.PNG)
 *Fast health overview with key metrics and recommendations*
 
 ### Configuration Settings
-![Configuration](5.PNG)
+![Configuration](screenshots/5.PNG)
 *Flexible configuration options for customized analysis*
 
 ## 🎥 Demo Video
