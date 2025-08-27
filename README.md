@@ -65,8 +65,6 @@
 
 Watch our comprehensive walkthrough of the Code Debt Detective Prototype:
 
-[![Demo Video](https://img.shields.io/badge/Watch%20Demo-Google%20Drive-red.svg)](https://drive.google.com/drive/folders/13E3Ubyh6B16dU9bMx1jCTQFSE2t9CenN?usp=sharing)
-
 *[Click here to view the full demo video on Google Drive](https://drive.google.com/your-video-link-here)*
 
 ## 🚀 Quick Start
