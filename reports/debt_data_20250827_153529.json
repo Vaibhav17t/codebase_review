@@ -1,0 +1,98 @@
+{
+  "project_name": "codebase",
+  "timestamp": "20250827_153529",
+  "summary": "**Executive Summary: Technical Debt Analysis Report**\n\nThe recent technical debt analysis has identified a total of 10 issues within our codebase, with no critical issues present, indicating a generally stable state. However, a significant portion, 7 out of the 10 identified issues, are categorized as high priority. The predominant types of technical debt include deep nesting (6 occurrences), which can complicate code readability and maintenance, and technical debt comments (2 occurrences), which highlight areas needing attention but lack actionable follow-through. Additionally, we noted isolated issues related to having too many parameters (1 occurrence) and long lines of code (1 occurrence), which also detract from code clarity and maintainability.\n\nThe most pressing risks arise from the high-priority issues, particularly deep nesting. This complexity can lead to increased costs and time spent on future development and maintenance, potentially delaying project timelines and affecting overall product quality. If left unaddressed, these issues may hinder our ability to implement new features, adapt to market changes quickly, or onboard new developers efficiently, ultimately impacting customer satisfaction and business agility.\n\nTo mitigate these risks, we recommend the following actions: First, refactor the code with deep nesting issues, which will require an estimated effort of 12-16 hours. This will enhance code readability and maintainability. Second, address the technical debt comments by allocating around 4-6 hours to clarify and prioritize these areas, ensuring that they are actionable and tracked appropriately. Lastly, streamline functions to reduce the number of parameters, which can be achieved in approximately 3-5 hours. These steps will not only improve the codebase but also lay a foundation for scalable and efficient future development.",
+  "smells": [
+    {
+      "file_path": "/app/codebase/bad_code.py",
+      "line_number": 3,
+      "smell_type": "too_many_parameters",
+      "description": "Function 'process_user_data' has 16 parameters (>5)",
+      "severity": "DebtSeverity.HIGH",
+      "suggested_fix": "Use dataclasses or configuration objects",
+      "confidence_score": 0.9
+    },
+    {
+      "file_path": "/app/codebase/bad_code.py",
+      "line_number": 6,
+      "smell_type": "deep_nesting",
+      "description": "Code block nested 9 levels deep",
+      "severity": "DebtSeverity.HIGH",
+      "suggested_fix": "Extract methods or use early returns",
+      "confidence_score": 0.7
+    },
+    {
+      "file_path": "/app/codebase/bad_code.py",
+      "line_number": 7,
+      "smell_type": "deep_nesting",
+      "description": "Code block nested 8 levels deep",
+      "severity": "DebtSeverity.HIGH",
+      "suggested_fix": "Extract methods or use early returns",
+      "confidence_score": 0.7
+    },
+    {
+      "file_path": "/app/codebase/bad_code.py",
+      "line_number": 8,
+      "smell_type": "deep_nesting",
+      "description": "Code block nested 7 levels deep",
+      "severity": "DebtSeverity.HIGH",
+      "suggested_fix": "Extract methods or use early returns",
+      "confidence_score": 0.7
+    },
+    {
+      "file_path": "/app/codebase/bad_code.py",
+      "line_number": 9,
+      "smell_type": "deep_nesting",
+      "description": "Code block nested 6 levels deep",
+      "severity": "DebtSeverity.HIGH",
+      "suggested_fix": "Extract methods or use early returns",
+      "confidence_score": 0.7
+    },
+    {
+      "file_path": "/app/codebase/bad_code.py",
+      "line_number": 10,
+      "smell_type": "deep_nesting",
+      "description": "Code block nested 5 levels deep",
+      "severity": "DebtSeverity.HIGH",
+      "suggested_fix": "Extract methods or use early returns",
+      "confidence_score": 0.7
+    },
+    {
+      "file_path": "/app/codebase/bad_code.py",
+      "line_number": 11,
+      "smell_type": "deep_nesting",
+      "description": "Code block nested 4 levels deep",
+      "severity": "DebtSeverity.HIGH",
+      "suggested_fix": "Extract methods or use early returns",
+      "confidence_score": 0.7
+    },
+    {
+      "file_path": "/app/codebase/bad_code.py",
+      "line_number": 18,
+      "smell_type": "technical_debt_comment",
+      "description": "Technical debt marker: # TODO: This is a hack, needs proper implementation",
+      "severity": "DebtSeverity.LOW",
+      "suggested_fix": "Address the noted issue",
+      "confidence_score": 0.6
+    },
+    {
+      "file_path": "/app/codebase/bad_code.py",
+      "line_number": 27,
+      "smell_type": "technical_debt_comment",
+      "description": "Technical debt marker: # FIXME: This method is doing too many things",
+      "severity": "DebtSeverity.LOW",
+      "suggested_fix": "Address the noted issue",
+      "confidence_score": 0.6
+    },
+    {
+      "file_path": "/app/codebase/bad_code.py",
+      "line_number": 3,
+      "smell_type": "long_line",
+      "description": "Line length: 168 characters (>120)",
+      "severity": "DebtSeverity.LOW",
+      "suggested_fix": "Break line or refactor for readability",
+      "confidence_score": 0.9
+    }
+  ],
+  "metrics": []
+}

@@ -1,0 +1,22 @@
+# Core dependencies
+openai>=1.12.0
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+
+# Code analysis
+ast-grep-cli>=0.5.0
+gitpython>=3.1.40
+
+# Web dashboard (optional)
+flask>=2.3.0
+flask-cors>=4.0.0
+gunicorn>=21.2.0
+
+# Database (optional)
+psycopg2-binary>=2.9.0
+sqlalchemy>=2.0.0
+
+# Utilities
+requests>=2.31.0
+click>=8.1.0
+rich>=13.0.0

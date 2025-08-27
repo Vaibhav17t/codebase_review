@@ -1,0 +1,66 @@
+services:
+  # Code Debt Detective Agent
+  debt-detective:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: code-debt-detective
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PYTHONUNBUFFERED=1
+    volumes:
+      # Mount your codebase for analysis
+      - ${PROJECT_PATH:-./sample_project}:/app/codebase:ro
+      # Mount for generated reports
+      - ./reports:/app/reports
+      # Mount the detective script
+      - ./code_debt_detective.py:/app/code_debt_detective.py
+    stdin_open: true
+    tty: true
+    working_dir: /app
+    command: python code_debt_detective.py
+
+  # Optional: Web Dashboard
+ # dashboard:
+  #  build:
+   #   context: .
+    #  dockerfile: Dockerfile.web
+ #   container_name: debt-dashboard
+  #  environment:
+   #   - OPENAI_API_KEY=${OPENAI_API_KEY}
+    #  - DATABASE_URL=postgresql://detective:${DB_PASSWORD:-secure_pass}@postgres:5432/debt_reports
+   # ports:
+    #  - "8080:8080"
+   # volumes:
+    #  - ./reports:/app/reports
+    #  - ./dashboard:/app/dashboard
+   # depends_on:
+    #  - postgres
+   # command: python dashboard_app.py
+
+  # Database for storing analysis history
+ # postgres:
+   # image: postgres:15-alpine
+   # container_name: debt-detective-db
+   # environment:
+     # POSTGRES_DB: debt_reports
+     # POSTGRES_USER: detective
+     # POSTGRES_PASSWORD: ${DB_PASSWORD:-secure_pass}
+   # volumes:
+    #  - postgres_data:/var/lib/postgresql/data
+    #  - ./init_db.sql:/docker-entrypoint-initdb.d/init.sql
+   # ports:
+     # - "5432:5432"
+
+  # Optional: Redis for caching large analysis results
+  redis:
+    image: redis:7-alpine
+    container_name: debt-detective-cache
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  postgres_data:
+  redis_data:
