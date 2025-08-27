@@ -46,26 +46,26 @@
 ## 📸 Screenshots
 
 ### Main Menu Interface
-![Main Menu](screenshots/main_menu.png)
+![Main Menu](screenshots/1.PNG)
 *The intuitive main menu offering various analysis options*
 
 ### Full Analysis Report
-![Full Analysis Report](screenshots/full_analysis.png)
+![Full Analysis Report](screenshots/2.PNG)
 *Comprehensive analysis showing health score and detailed issue breakdown*
 
 ### Quick Health Check
-![Quick Health Check](screenshots/quick_health.png)
+![Quick Health Check](screenshots/3.PNG)
 *Fast health overview with key metrics and recommendations*
 
 ### Configuration Settings
-![Configuration](screenshots/configuration.png)
+![Configuration](5.PNG)
 *Flexible configuration options for customized analysis*
 
 ## 🎥 Demo Video
 
 Watch our comprehensive walkthrough of the Code Debt Detective Prototype:
 
-[![Demo Video](https://img.shields.io/badge/Watch%20Demo-Google%20Drive-red.svg)](https://drive.google.com/your-video-link-here)
+[![Demo Video](https://img.shields.io/badge/Watch%20Demo-Google%20Drive-red.svg)](https://drive.google.com/drive/folders/13E3Ubyh6B16dU9bMx1jCTQFSE2t9CenN?usp=sharing)
 
 *[Click here to view the full demo video on Google Drive](https://drive.google.com/your-video-link-here)*
 
