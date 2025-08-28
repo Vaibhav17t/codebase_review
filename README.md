@@ -193,9 +193,4 @@ We welcome contributions to improve the Code Debt Detective Prototype! Please se
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 <div align="center">
-
-**Built with ❤️ for developers who care about code quality**
-
-[⭐ Star this repo](https://github.com/Vaibhav17t/codebase_review) | [🍴 Fork it](https://github.com/Vaibhav17t/codebase_review/fork) | [📝 Report Bug](https://github.com/Vaibhav17t/codebase_review/issues)
-
 </div>
