@@ -1,9 +1,5 @@
 # Code Debt Detective Prototype - AI Agent
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
-[![Docker](https://img.shields.io/badge/docker-enabled-blue.svg)](https://www.docker.com/)
-
 ## 🚀 Overview
 
 **Code Debt Detective Prototype** is an intelligent AI-powered tool that analyzes codebases to identify and predict technical debt. This prototype leverages advanced algorithms to provide comprehensive code quality assessments, helping developers maintain cleaner, more maintainable codebases.
@@ -195,26 +191,6 @@ We welcome contributions to improve the Code Debt Detective Prototype! Please se
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Authors
-
-- **Vaibhav** - *Initial work and prototype development* - [@Vaibhav17t](https://github.com/Vaibhav17t)
-
-## 🙏 Acknowledgments
-
-- Thanks to the open-source community for inspiration
-- Built with modern Python best practices
-- Docker containerization for consistent deployment
-
-## 📞 Support
-
-Having issues with the Code Debt Detective Prototype? We're here to help!
-
-- 📧 **Email**: [your-email@example.com](mailto:your-email@example.com)
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/Vaibhav17t/codebase_review/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/Vaibhav17t/codebase_review/discussions)
-
----
 
 <div align="center">
 
